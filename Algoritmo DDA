@@ -1,7 +1,4 @@
 import matplotlib.pyplot as plt
-import time
-
-start_time = time.time()
 
 x1 = 15
 x2 = 20
