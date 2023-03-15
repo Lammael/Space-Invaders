@@ -1,0 +1,39 @@
+import matplotlib.pyplot as plt
+import time
+
+start_time = time.time()
+
+x1 = 15
+x2 = 20
+y1 = 30
+y2 = 10
+
+dx = x2 - x1
+dy = y2 - y1
+
+if (abs(dx) > abs(dy)):
+    passos = abs(dx)
+else:
+    passos = abs(dy)
+
+incrementoX = dx / passos
+incrementoY = dy / passos
+
+i = 0
+
+coordenadasX = []
+coordenadasY = []
+
+while i < passos:
+    i += 1
+    x1 = x1 + incrementoX
+    y1 = y1 + incrementoY
+    coordenadasX.append(x1)
+    coordenadasY.append(y1)
+
+plt.plot(coordenadasX, coordenadasY)
+
+plt.xlabel("Eixo X")
+plt.ylabel("Eixo Y")
+plt.title("Algoritmo DDA")
+plt.show()
