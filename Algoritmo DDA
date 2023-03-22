@@ -1,9 +1,16 @@
 import matplotlib.pyplot as plt
+import time
 
-x1 = 15
-x2 = 20
-y1 = 30
-y2 = 10
+tempo = time.time()
+
+plt.title("Algoritmo DDA")
+plt.xlabel("Eixo X")
+plt.ylabel("Eixo Y")
+
+x1 = 1000   
+y1 = 2000
+x2 = 4000
+y2 = 4000
 
 dx = x2 - x1
 dy = y2 - y1
@@ -25,12 +32,11 @@ while i < passos:
     i += 1
     x1 = x1 + incrementoX
     y1 = y1 + incrementoY
+    print("x1: ", x1, "Y1: ", y1)
     coordenadasX.append(x1)
     coordenadasY.append(y1)
 
-plt.plot(coordenadasX, coordenadasY)
+print("Processo terminado --- %s segundos ---" % (time.time() - tempo))
 
-plt.xlabel("Eixo X")
-plt.ylabel("Eixo Y")
-plt.title("Algoritmo DDA")
+plt.plot(coordenadasX, coordenadasY)
 plt.show()
