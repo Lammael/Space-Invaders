@@ -6,17 +6,18 @@ public class EnemyShoot : MonoBehaviour
 {
     public float speed;
 
+
     void Start()
     {
-        
+
     }
 
     void Update()
     {
-        Shoot();
+        EnemyMissile();
     }
 
-    private void Shoot()
+    private void EnemyMissile()
     {
         transform.Translate(Vector2.down * speed * Time.deltaTime);
     }

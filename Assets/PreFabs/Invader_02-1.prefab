@@ -147,5 +147,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyMissile: {fileID: 1368153764882336514, guid: 6a8c7c1c56f0b954f841661cec28ecc2, type: 3}
   spawnerTimer: 15
-  spawnMax: 27
-  spawnMin: 8
+  spawnMax: 90
+  spawnMin: 30
