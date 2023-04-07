@@ -60,6 +60,8 @@
     <Compile Include="Assets\Scripts\EnemyMov.cs" />
     <Compile Include="Assets\Scripts\MissileSpawner.cs" />
     <Compile Include="Assets\Scripts\PlayerMov.cs" />
+    <Compile Include="Assets\Scripts\PlayerShoot.cs" />
+    <Compile Include="Assets\Scripts\PlayerLaser.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
